@@ -1,0 +1,1 @@
+# Andrea lugo, variables notes
