@@ -1,8 +1,6 @@
 #include <studio.h>
 
-char name{} "andrea";
-int 
-floar 
-breakfast{}
-
-color 
+int main(void){
+    printf("hello word\n");
+    return 0;
+}
