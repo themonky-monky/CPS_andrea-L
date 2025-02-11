@@ -1,9 +1,9 @@
 //andrea lugo,financial calculator
-#include <studio.h>
-int main(void){
+#include <stdio.h>   
+    int main(void){
     float income, rent, utilities, groceries, transportation, saving, expenses, total;
     float prent, puntilities, pgroceries, ptransportation, psaving, pexpenses, ptotal;
-    Printf("hello and welcome to our financial_calculator\n");
+    printf("hello and welcome to our financial_calculator\n");
     printf("how much do you make each month?");
     scanf("%f", &income);
     printf("your monthly icome is $%.2f\n", income); 
