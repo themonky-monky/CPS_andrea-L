@@ -9,7 +9,7 @@ int main(void){
     scanf("%f", &income);
     printf("your monthly income is $%.2f\n", income); 
     printf("how much is your rent?");
-    scanf("%f", &rent) 
+    scanf("%f", &rent); 
     printf("how is your utilities?");
     scanf("%f", &utilities);
     printf("how is your groseries?");
