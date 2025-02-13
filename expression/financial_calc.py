@@ -15,13 +15,13 @@ income = float (input("what is your monthy transportation\n"))
 # calculation savings as 10% of income (variable)
 income = float (input("what is your monthy saving"))
 # calculation spending money income - (rent+utilities+groceries+transportation+savings) (variable)
-
+spend = income(rent+utilities+groceries+transportation+savings)
 # calculation percent of rent (rent/income) (variable)
-
+rent_percent = (rent/income)*100
 # calculation percent of utilities (utilities/income) (variable)
-
+utilities-percent(utilities/income)*100
 # calculation percent of groceries (groceries/income) (variable)
-
+gro
 # calculation percent of transportation (transportation/income) (variable)
 
 # tell user category spending amount AND percent for rent ("you spend $xx% on rent that is xx% of your income")
