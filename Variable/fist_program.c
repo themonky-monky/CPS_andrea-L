@@ -1,7 +1,7 @@
  //andrea lugo,first program 
- #include <studio.h>
+ #include <stdio.h>
 
  int main(void){
-    printf("Hello word");
+    printf("Hello word\n");
     return 0; 
  } 
