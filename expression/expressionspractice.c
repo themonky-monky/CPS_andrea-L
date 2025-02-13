@@ -23,5 +23,5 @@ print("%d\n,equation7")
 print("%d\n,equation8")
 print("%d\n,equation9")
 
-return 0 
+return 0;
 }

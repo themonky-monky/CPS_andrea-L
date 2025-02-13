@@ -24,5 +24,4 @@ int maid(void);{
     printf("My age is: %d\n", 15);
     printf("My favorite subject in school is: %s\n", healt);
 
-return 0 
-}
+return 0 ;
