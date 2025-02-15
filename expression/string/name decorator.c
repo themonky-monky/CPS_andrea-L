@@ -8,10 +8,7 @@ char name[50];
     printf("pleaser tell your name: ");
     scanf("%s", name); 
 
-    prinft("<<<");
-    prinft("name");
-    printf(">>>");
-    
+    char one[] = "<<<"; 
 
 return 0; 
 }
