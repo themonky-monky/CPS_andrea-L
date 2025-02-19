@@ -1,4 +1,4 @@
- //andrea lugo,first program 
+ //andrea lugo, first_program c
  #include <stdio.h>
 
  char name[30]; 
@@ -7,7 +7,7 @@
 
     printf("Hello word\n");
     printf("pleaser tell me your name/n");
-    scanf ("%", name);
+    scanf ("%s", name);
 
     printf("hello %s, welcome to my program", name);
     printf("this is my first program\n"); 
