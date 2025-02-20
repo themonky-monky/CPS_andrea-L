@@ -1,9 +1,9 @@
   //andrea lugo expression practice
-  #include<stdio.h>
-
+  #include <stdio.h>
+#include <math.h>
 int main(void){
 
-"int" 7-24/8*4+6;
+int 7-24/8*4+6;
 int 18/3-7+2*5;
 int 6*4/12+72/8-9;
 int(17-6/2)+4*3;
@@ -13,15 +13,15 @@ int(3*5^2/15)-(5-2^2);
 int(1^4*2^2+3^3)-2^5/4;
 int(22/2-2.5)^2+(4-6/6)^2;
 
-print("%d\n,equation1");
-print("%d\n,equation2");
-print("%d\n,equation3");
-print("%d\n,equation4");
-print("%d\n,equation5");
-print("%d\n,equation6");
-print("%d\n,equation7");
-print("%d\n,equation8");
-print("%d\n,equation9");
+printf("%d\n,equation1");
+printf("%d\n,equation2");
+printf("%d\n,equation3");
+printf("%d\n,equation4");
+printf("%d\n,equation5");
+printf("%d\n,equation6");
+printf("%d\n,equation7");
+printf("%d\n,equation8");
+printf("%d\n,equation9");
 
 return 0;
 }
