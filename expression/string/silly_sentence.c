@@ -2,21 +2,20 @@
 #include <stdio.h>
 #include <string.h>
 
-char name[10];
-
 int main(void){
-    char gorilla[25], mall[10], shopping[20];
+char gorilla[23], mall[15], shopping[25];
 
-    printf("tell me a animal");
-    scanf("%s25", gorilla);
 
-    printf("tell me a place");
-    scanf("%s10", mall);
+printf("Tell me an animal: ");
+scanf("%24s", gorilla);
 
-    printf("tell me a activity");
-    scanf("%s20", shopping);
+printf("Tell me a place: ");
+scanf("%9s", mall);
 
-    printf("One day, a gorilla went to the Mall of America and decided to shop all day long.");
+printf("Tell me an activity: ");
+scanf("%19s", shopping);
 
-    return 0;
+printf("One day, a %s went to the %s and decided to %s all day long.\n", gorilla, mall, shopping);
+
+return 0;
 }
