@@ -1,4 +1,4 @@
-//andrea lugo, update_hello_world.c
+//Andrea lugo, update_hello_world.c
 #include <stdio.h>
 
 void info(char name[]){
