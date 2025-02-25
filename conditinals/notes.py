@@ -29,3 +29,19 @@ if "a" in name or "e" in name or"i" in name or "o" in name or "u" in name:
     print("your name has a vowel!")
 else:
     print("your name dosn't have a vowel.")
+
+    num = 6 
+
+if num > 5 and num < 10:
+    if num == 7:
+        print(f"{num}that is an unluck number!")
+    else:
+        print(f"{num}that is a large singles digit number")
+else:
+    if num == 4:
+        print(f"{num} is the best number!")
+    else:
+        if num > 10:
+            print(f"{num} is not a single digit number")
+        else:
+            print(f"{num} is a small number")
