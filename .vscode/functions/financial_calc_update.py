@@ -17,10 +17,16 @@ saving = income *0.10
 # calculation spending money income - (rent+utilities+groceries+transportation+savings) (variable)
 spending = ("rent + utilities + groceries + transportation + savings")
 
-print(f"Income: ${income:.2f}")
+print(f"\nIncome: ${income:.2f}")
 print(f"Rent: ${rent:.2f}")
 print(f"Utilities: ${utilities:.2f}")
 print(f"Groceries: ${groceries:.2f}")
 print(f"Transportation: ${transportation:.2f}")
 print(f"Savings (10% of income): ${saving:.2f}")
 print(f"Total Spending: ${spending:.2f}")
+
+income, rent, utilities, groceries, transportation
+    
+saving = (income)
+spending = (rent, utilities, groceries, transportation, saving)
+(income, rent, utilities, groceries, transportation, saving, spending)
