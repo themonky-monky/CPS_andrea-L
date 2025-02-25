@@ -2,39 +2,49 @@
 
 # write a print statement telling the user what the program is (budget calculator)
       
-print("Welcome to the Budget Calculator!\n")
+def collect_user_inputs():
+    income = float(input("What is your monthly income? $")) 
+    rent = float(input("What is your monthly rent? $")) 
+    utilities = float(input("What is your monthly utilities? $"))
+    groceries = float(input("What is your monthly groceries? $"))
+    transportation = float(input("What is your monthly transportation? $"))
+    return income, rent, utilities, groceries, transportation
 
-# Ask for monthly income (user input)
-income = float(input("What is your monthly income? $")) 
+# Function to calculate savings (10% of income)
+def calculate_savings(income):
+    return income * 0.10
 
-# Ask for rent amount (user input)
-rent = float(input("What is your monthly rent? $")) 
+# Function to calculate total spending
+def calculate_total_spending(rent, utilities, groceries, transportation, savings):
+    return rent + utilities + groceries + transportation + savings
 
-# Ask for utilities amount (user input)
-utilities = float(input("What is your monthly utilities? $"))
+# Function to display the breakdown of the budget
+def display_budget(income, rent, utilities, groceries, transportation, savings, spending):
+    print(f"\nIncome: ${income:.2f}")
+    print(f"Rent: ${rent:.2f}")
+    print(f"Utilities: ${utilities:.2f}")
+    print(f"Groceries: ${groceries:.2f}")
+    print(f"Transportation: ${transportation:.2f}")
+    print(f"Savings (10% of income): ${savings:.2f}")
+    print(f"Total Spending: ${spending:.2f}")
 
-# Ask for groceries amount (user input)
-groceries = float(input("What is your monthly groceries? $"))
+# Main function to run the program
+def main():
+    # Welcome statement
+    print("Welcome to the Budget Calculator!\n")
 
-# Ask for transportation amount (user input)
-transportation = float(input("What is your monthly transportation? $"))
+    # Collect user inputs
+    income, rent, utilities, groceries, transportation = collect_user_inputs()
 
-# Calculate savings as 10% of income
-saving = income * 0.10
+    # Calculate savings
+    savings = calculate_savings(income)
 
-# Calculate total spending (sum of rent, utilities, groceries, transportation, and savings)
-spending = rent + utilities + groceries + transportation + saving
+    # Calculate total spending
+    spending = calculate_total_spending(rent, utilities, groceries, transportation, savings)
 
-# Display the breakdown
-print(f"\nIncome: ${income:.2f}")
-print(f"Rent: ${rent:.2f}")
-print(f"Utilities: ${utilities:.2f}")
-print(f"Groceries: ${groceries:.2f}")
-print(f"Transportation: ${transportation:.2f}")
-print(f"Savings (10% of income): ${saving:.2f}")
-print(f"Total Spending: ${spending:.2f}")
+    # Display the budget breakdown
+    display_budget(income, rent, utilities, groceries, transportation, savings, spending)
 
-income, rent, utilities, groceries, transportation
-saving = (income)
-spending = (rent, utilities, groceries, transportation, saving)
-(income, rent, utilities, groceries, transportation, saving, spending)
+# Run the main function
+if __name__ == "__main__":
+    main()
