@@ -2,21 +2,30 @@
 
 # write a print statement telling the user what the program is (budget calculator)
       
-# Ask for monthly income (user input)
-income = float(input("what is your monthy income? $")) 
-#Ask for rent amount (user input)
-rent = float(input("what is your monthy rent\n")) 
-#Ask for utilities amount (user input)
-utilities = float(input("what is your monthy utilities\n"))
-#Ask for groceries amount (user input)
-groceries  = float(input("what is your monthy groseries\n"))
-#Ask for transportation amount (user input)
-transportation = float(input("what is your monthy transportation\n"))
-# calculation savings as 10% of income (variable)
-saving = income *0.10
-# calculation spending money income - (rent+utilities+groceries+transportation+savings) (variable)
-spending = ("rent + utilities + groceries + transportation + savings")
+print("Welcome to the Budget Calculator!\n")
 
+# Ask for monthly income (user input)
+income = float(input("What is your monthly income? $")) 
+
+# Ask for rent amount (user input)
+rent = float(input("What is your monthly rent? $")) 
+
+# Ask for utilities amount (user input)
+utilities = float(input("What is your monthly utilities? $"))
+
+# Ask for groceries amount (user input)
+groceries = float(input("What is your monthly groceries? $"))
+
+# Ask for transportation amount (user input)
+transportation = float(input("What is your monthly transportation? $"))
+
+# Calculate savings as 10% of income
+saving = income * 0.10
+
+# Calculate total spending (sum of rent, utilities, groceries, transportation, and savings)
+spending = rent + utilities + groceries + transportation + saving
+
+# Display the breakdown
 print(f"\nIncome: ${income:.2f}")
 print(f"Rent: ${rent:.2f}")
 print(f"Utilities: ${utilities:.2f}")
@@ -26,7 +35,6 @@ print(f"Savings (10% of income): ${saving:.2f}")
 print(f"Total Spending: ${spending:.2f}")
 
 income, rent, utilities, groceries, transportation
-    
 saving = (income)
 spending = (rent, utilities, groceries, transportation, saving)
 (income, rent, utilities, groceries, transportation, saving, spending)
