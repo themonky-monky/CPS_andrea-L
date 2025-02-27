@@ -1,43 +1,38 @@
 //andrea lugo, financial_calc_update.c
 #include <stdio.h>
-#include <math.h>
-float income, rent, utilities, groceries, transportation, spending, savings;
 
-float use(char type[]){
+float use(char type[]) {
     float amount;
-    printf("what is your %s amount?\n", type); 
+    printf("What is your %s amount?\n", type);
     scanf("%f", &amount);
     return amount;
 }
 
-void word(float income, float amount){
-    float percent = (amount/income)*100;
-    printf("you are spending $%.2f this is %.2f%%", amount, percent);
+void word(float income, float amount, char type[]) {
+    float percent = (amount / income) * 100;
+    printf("You are spending $%.2f on %s, which is %.2f%% of your income.\n", amount, type, percent);
 }
 
-int main(void){
-printf("welcome to my financial calculator\n");
+int main(void) {
+    printf("Welcome to the Financial Calculator!\n");
 
+    float income = use("income");
+    float rent = use("rent");
+    float utilities = use("utilities");
+    float groceries = use("groceries");
+    float transportation = use("transportation");
 
+    float savings = income * 0.10;
 
-rent = use("rent");
+    float spending = rent + utilities + groceries + transportation;
 
-utilities = use("utilities");
+    word(income, rent, "rent");
+    word(income, utilities, "utilities");
+    word(income, groceries, "groceries");
+    word(income, transportation, "transportation");
 
-groceries = use("groceries");
+    printf("You are saving $%.2f, which is 10%% of your income.\n", savings);
+    printf("Your total spending is $%.2f, excluding savings.\n", spending);
 
-transportation = use("transportation");
-
-float spending = income - (rent + utilities + groceries + transportation);
-
-float savings = income *100;
-
-word(income, rent);
-word(income, utilities);
-word(income, groceries);
-word(income, transportation);
-
-printf("you are savings $%.2f this is 10%%", savings);
-printf("you are spending $%.2f this is 10%%", spending);
-return 0;
+    return 0;
 }
