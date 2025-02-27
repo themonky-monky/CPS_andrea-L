@@ -3,48 +3,36 @@
 # write a print statement telling the user what the program is (budget calculator)
       
 def collect_user_inputs():
-    income = float(input("What is your monthly income? $")) 
-    rent = float(input("What is your monthly rent? $")) 
+    income = float(input("What is your monthly income? $"))
+    rent = float(input("What is your monthly rent? $"))
     utilities = float(input("What is your monthly utilities? $"))
     groceries = float(input("What is your monthly groceries? $"))
     transportation = float(input("What is your monthly transportation? $"))
     return income, rent, utilities, groceries, transportation
 
-# Function to calculate savings (10% of income)
-def calculate_savings(income):
-    return income * 0.10
+def calculate_percentage(income, rent, utilities, groceries, transportation):
+    rent_percent = (rent / income) * 100
+    utilities_percent = (utilities / income) * 100
+    groceries_percent = (groceries / income) * 100
+    transportation_percent = (transportation / income) * 100
+    return rent_percent, utilities_percent, groceries_percent, transportation_percent
 
-# Function to calculate total spending
-def calculate_total_spending(rent, utilities, groceries, transportation, savings):
-    return rent + utilities + groceries + transportation + savings
-
-# Function to display the breakdown of the budget
-def display_budget(income, rent, utilities, groceries, transportation, savings, spending):
+def display_budget(income, rent, utilities, groceries, transportation, rent_percent, utilities_percent, groceries_percent, transportation_percent):
     print(f"\nIncome: ${income:.2f}")
-    print(f"Rent: ${rent:.2f}")
-    print(f"Utilities: ${utilities:.2f}")
-    print(f"Groceries: ${groceries:.2f}")
-    print(f"Transportation: ${transportation:.2f}")
-    print(f"Savings (10% of income): ${savings:.2f}")
-    print(f"Total Spending: ${spending:.2f}")
+    print(f"Rent: ${rent:.2f} ({rent_percent:.2f}% of income)")
+    print(f"Utilities: ${utilities:.2f} ({utilities_percent:.2f}% of income)")
+    print(f"Groceries: ${groceries:.2f} ({groceries_percent:.2f}% of income)")
+    print(f"Transportation: ${transportation:.2f} ({transportation_percent:.2f}% of income)")
 
-# Main function to run the program
 def main():
-    # Welcome statement
-    print("Welcome to the Budget Calculator!\n")
+    
+    print("Welcome to the Budget Calculator!\nThis program helps you manage your monthly income and expenses.\n")
 
-    # Collect user inputs
     income, rent, utilities, groceries, transportation = collect_user_inputs()
 
-    # Calculate savings
-    savings = calculate_savings(income)
+    rent_percent, utilities_percent, groceries_percent, transportation_percent = calculate_percentage(income, rent, utilities, groceries, transportation)
 
-    # Calculate total spending
-    spending = calculate_total_spending(rent, utilities, groceries, transportation, savings)
+    display_budget(income, rent, utilities, groceries, transportation, rent_percent, utilities_percent, groceries_percent, transportation_percent)
 
-    # Display the budget breakdown
-    display_budget(income, rent, utilities, groceries, transportation, savings, spending)
-
-# Run the main function
 if __name__ == "__main__":
     main()
