@@ -17,9 +17,9 @@ hour = local_time.tm_hour
 minutes = local_time.tm_min
 print(minutes)
 
-if hour >7 and hour <8:
+if hour >6 and hour <12:
     print("good morning")
-elif hour >11 and hour <12: 
+elif hour >12 and hour <18: 
     print("good afternoon")
-elif hour >18 and hour <19:
+elif hour >18 and hour <22:
     print("good evening")
