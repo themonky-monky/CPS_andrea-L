@@ -1,13 +1,13 @@
 # Andrea lugo, financial calculator python program
 
-def get_user_input():  
-    pincome = float(input("What is your monthly income?\n"))  
-    prent = float(input("What is your monthly rent?\n"))  
-    putilities = float(input("What are your monthly utilities?\n"))  
-    pgroceries = float(input("What are your monthly groceries?\n"))  
-    ptransportation = float(input("What is your monthly transportation?\n"))  
-    return pincome, prent, putilities, pgroceries, ptransportation  
-  
+def get_user_input():
+    pincome = float(input("What is your monthly income?\n"))
+    prent = float(input("What is your monthly rent?\n"))
+    putilities = float(input("What are your monthly utilities?\n"))
+    pgroceries = float(input("What are your monthly groceries?\n"))
+    ptransportation = float(input("What is your monthly transportation?\n"))
+    print_results(pincome, prent, putilities, pgroceries, ptransportation)    
+
 def calculate(pincome, prent, putilities, pgroceries, ptransportation):  
     pexpenses = prent + putilities + pgroceries + ptransportation  
     psaving = pincome - pexpenses  
