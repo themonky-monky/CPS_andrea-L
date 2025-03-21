@@ -18,7 +18,7 @@ def percent(category, amount, total):
     return f"You spent \\${amount:.2f} on {category}, which is {amount / total:.0%} of your income."
 
 def print_results(pincome, pexpenses, psaving, prent, putilities, pgroceries, ptransportation):
-    print(f"Your total expenses are: \\${pexpenses:.2f}")
+    (f"Your total expenses are: \\${pexpenses:.2f}")
     print(f"Your total savings are: \\${psaving:.2f}")
     print(percent("rent", prent, pincome))
     print(percent("utilities", putilities, pincome))
