@@ -1,37 +1,35 @@
 # Andrea lugo, financial calculator python program
 
-def get_user_input():
-    income = float(input("What is your monthly income?\n"))
-    rent = float(input("What is your monthly rent?\n"))
-    utilities = float(input("What are your monthly utilities?\n"))
-    groceries = float(input("What are your monthly groceries?\n"))
-    transportation = float(input("What is your monthly transportation?\n"))
-    return income, rent, utilities, groceries, transportation
+def calculate(income, **expenses):
+    total_expenses = sum(expenses.values())
+    savings = income - total_expenses
+    return {'total_expenses': total_expenses, 'savings': savings}
 
-def calculate(income, rent, utilities, groceries, transportation):
-    expenses = rent + utilities + groceries + transportation
-    savings = income - expenses
-    return expenses, savings
+def print_percentages(income, results, **expenses):
+    for category, amount in expenses.items():
+        percentage = (amount / income) * 100 if income > 0 else 0
+        print(f"You spent ${amount:.2f} on {category}, which is {percentage:.0f}% of your income.")
+    savings_percentage = (results['savings'] / income) * 100 if income > 0 else 0
+    print(f"Your savings are ${results['savings']:.2f}, which is {savings_percentage:.0f}% of your income.")
 
-def percent(category, amount, total):
-    if total == 0:
-        return f"You spent ${amount:.2f} on {category}, which is 0% of your income."
-    return f"You spent ${amount:.2f} on {category}, which is {amount / total:.0%} of your income."
-
-def print_results(income, rent, utilities, groceries, transportation):
-    expenses, savings = calculate(income, rent, utilities, groceries, transportation)
-    print(f"Your total expenses are: ${expenses:.2f}")
-    print(f"Your total savings are: ${savings:.2f}")
-    print(percent("rent", rent, income))
-    print(percent("utilities", utilities, income))
-    print(percent("groceries", groceries, income))
-    print(percent("transportation", transportation, income))
-    print(percent("savings", savings, income))
+def print_results(income, **expenses):
+    results = calculate(income, **expenses)
+    print(f"Your total expenses are: ${results['total_expenses']:.2f}")
+    print(f"Your total savings are: ${results['savings']:.2f}")
+    print_percentages(income, results, **expenses)
 
 def main():
     print("Welcome to the budget calculator!")
-    income, rent, utilities, groceries, transportation = get_user_input()
-    print_results(income, rent, utilities, groceries, transportation)
-
+    try:
+        income = float(input("Enter your monthly income: $"))
+        expenses = {
+            'rent': float(input("Enter your monthly rent: $")),
+            'utilities': float(input("Enter your monthly utilities: $")),
+            'groceries': float(input("Enter your monthly groceries: $")),
+            'transportation': float(input("Enter your monthly transportation: $"))
+        }
+        print_results(income, **expenses)
+    except ValueError:
+        print("Invalid input. Please enter numeric values.")
 # Run the program
 main()
