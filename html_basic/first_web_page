@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploring Landscapes</title>
+    <title>First web page, The Wonderful World of Animals</title>
 </head>
 <body>
-    <header>
-        <h1>Exploring Landscapes</h1>
-    </header>
-    
-    <section>
-        <h2>The Beauty of Mountain Landscapes</h2>
-        <p>Mountain landscapes are among the most awe-inspiring sights on Earth. From towering peaks to serene 
-            valleys, mountains provide a dramatic backdrop that can leave you speechless. 
-            The ever-changing weather, the rugged terrain, and the expansive views make mountain landscapes ideal for 
-            hiking, photography, and simply appreciating nature's grandeur.</p>
-    </section>
-    
-    <section>
-        <h2>The Tranquility of Coastal Landscapes</h2>
-        <p>Coastal landscapes offer a completely different kind of beauty. 
-            The sound of crashing waves, the salty breeze, and the vast horizon create a sense of peace and relaxation. 
-            Whether it's a rugged cliffside, a sandy beach, or a rocky coastline, the combination of water, 
-            land, and sky never fails to captivate the senses.</p>
-    </section>
+    <h1>The Wonderful World of Animals</h1>
+
+    <h2>History of Animals</h2>
+    <p>Animals have existed on Earth for over 600 million years. From the ancient sea creatures of the 
+        Cambrian period to the mighty dinosaurs and now to the wide variety of species we see today, 
+        animals have evolved into countless forms. Their survival and adaptation offer a fascinating glimpse 
+        into the history of life on our planet. And the animals is more inportant Animals are crucial for both 
+        ecological balance and human well-being. They play vital roles in ecosystems, providing essential 
+        services like pollination, seed dispersal, and maintaining food chains. Additionally, animals 
+        contribute to human health and welfare through companionship, assisting individuals with 
+        disabilities, and providing food and resources. </p>
+
+    <h2>Why I Love Animals</h2>
+    <p>Animals are amazing because of their diversity, intelligence, and ability to connect with humans. 
+        Whether it's a loyal dog, a majestic lion, or a curious dolphin, each creature has something unique 
+        and beautiful about it. Spending time around animals brings joy and teaches compassion.Many animals 
+        are known for their friendly and gentle nature, including dolphins, manatees, capybaras, and dogs. 
+        These animals often exhibit affection, peaceful coexistence with other species, and the ability 
+        to form long-lasting bonds. Some are also known for their intelligence and willingness to interact 
+        with humans. </p>
 </body>
 </html>
