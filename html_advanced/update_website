@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Space Exploration</title>
+</head>
+<body>
+  <h1>Discovering the Universe</h1>
+
+  <p>Space exploration helps us learn more about the universe. Scientists and astronauts work together to 
+    explore planets, stars, and galaxies beyond Earth.</p>
+
+  <ul>
+    <li>Planets in our solar system</li>
+    <li>Stars and galaxies</li>
+    <li>Black holes</li>
+    <li>Space missions like Apollo and Artemis</li>
+    <li>Life on the International Space Station</li>
+  </ul>
+
+  <img src="https://www.astronomy.com/uploads/2023/10/the-earth.jpg0" alt="Galaxy Image" width="2,048">
+  <img src="https://miro.medium.com/v2/resize:fit:2560/format:webp/1*1pK5nzjILTFn87EuH2lg1A.jpeg" alt="pixabay" width="853">
+
+  <p>Learn more at <a href="https://www.nasa.gov/about/" target="_blank">NASA's official website</a>.</p>
+</body>
+</html>
