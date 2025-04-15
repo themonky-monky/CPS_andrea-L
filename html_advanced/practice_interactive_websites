@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>404 Error</title>
-  <style>
-    body {
-      text-align center
-      font-family Arial, sans-serif;
-      background-color: 
-      padding-top 100px
-    }
-    img {
-      width 200px
-    }
-  </style>
+    <title>My Web Practice Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .section {
+            padding: 40px;
+            border-bottom: 2px solid #ccc;
+        }
+        .error-section {
+            background-color: #ffe0e0;
+        }
+        .fun-section {
+            background-color: #e0f7ff;
+        }
+        img {
+            width: 200px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Error 404</h1>
-  <p>Oops! The page you're looking for doesn't exist.</p>
-  <img src="https://i.imgur.com/qIufhof.png" alt="404 Error">
+
+    <!-- Error Page Section -->
+    <div class="section error-section">
+        <h1>Error 404</h1>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <img src="https://via.placeholder.com/300x200.png?text=404+Error" alt="404 Error Image">
+    </div>
+
+    <!-- Something I Like Section -->
+    <div class="section fun-section">
+        <h1>I Love Space!</h1>
+        <p>Space is amazing because it’s full of unknowns, endless beauty, and potential discoveries beyond our wildest imagination.</p>
+        <img src="https://via.placeholder.com/150?text=Galaxy" alt="Galaxy">
+        <img src="https://via.placeholder.com/150?text=Rocket" alt="Rocket">
+        <img src="https://via.placeholder.com/150?text=Moon" alt="Moon">
+        <h2>Why Space is Awesome:</h2>
+        <ul>
+            <li>Black holes and wormholes</li>
+            <li>Cool space missions</li>
+            <li>Endless possibilities</li>
+        </ul>
+    </div>
+
 </body>
 </html>
