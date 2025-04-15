@@ -1,53 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Web Practice Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .section {
-            padding: 40px;
-            border-bottom: 2px solid #ccc;
-        }
-        .error-section {
-            background-color: #ffe0e0;
-        }
-        .fun-section {
-            background-color: #e0f7ff;
-        }
-        img {
-            width: 200px;
-            margin: 10px;
-        }
-    </style>
+    <title>About My Favorite Hobby</title>
 </head>
 <body>
+    <h1>Photography</h1>
+    <p>I love taking photos of nature, animals, and special moments. Photography helps me capture memories and tell stories visually.</p>
+    
+    <h2>My Favorite Types of Photography:</h2>
+    <ul>
+        <li>Nature</li>
+        <li>animals</li>
+        <li>Special moment</li>
+    </ul>
 
-    <!-- Error Page Section -->
-    <div class="section error-section">
-        <h1>Error 404</h1>
-        <p>Oops! The page you're looking for doesn't exist.</p>
-        <img src="https://via.placeholder.com/300x200.png?text=404+Error" alt="404 Error Image">
-    </div>
-
-    <!-- Something I Like Section -->
-    <div class="section fun-section">
-        <h1>I Love Space!</h1>
-        <p>Space is amazing because it’s full of unknowns, endless beauty, and potential discoveries beyond our wildest imagination.</p>
-        <img src="https://via.placeholder.com/150?text=Galaxy" alt="Galaxy">
-        <img src="https://via.placeholder.com/150?text=Rocket" alt="Rocket">
-        <img src="https://via.placeholder.com/150?text=Moon" alt="Moon">
-        <h2>Why Space is Awesome:</h2>
-        <ul>
-            <li>Black holes and wormholes</li>
-            <li>Cool space missions</li>
-            <li>Endless possibilities</li>
-        </ul>
-    </div>
-
+    <img src="https://i.ytimg.com/vi/kj1-rR3udNs/sddefault.jpg" alt="animals Photo">
+    <p>animals are some of the cutest creatures in the world. Whether it's a fluffy puppy, a playful kitten, or 
+    a wobbly-legged baby giraffe, they bring joy and warmth to anyone who sees them. These little ones often 
+    rely on their parents for protection, food, and learning how to survive in the wild. Watching baby animals 
+    grow and explore their surroundings is a heartwarming reminder of the beauty of nature.</p>
+    <img src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2022/01/good-nature-homepage-hero_2-scaled.jpg0" alt="nature Photo">
+    <p> Nature is full of beauty and wonder. From tall mountains to deep oceans, every part of the natural world
+         has something special to offer. Trees, plants, animals, and the changing seasons all work together 
+         to create a peaceful and balanced environment. Spending time in nature helps people relax, feel happy, 
+         and appreciate the world around them.</p>
+    <img src="https://eventsbyspecialmoments.com/wp-content/uploads/2018/07/19388461_10210667583378986_5947708485957445736_o-1024x684.jpg" alt="special moment Photo">
+    Special moments are the memories we cherish for a lifetime. They can be as big as a celebration 
+    or as small as a quiet sunset with someone you love. These moments bring happiness, connection, 
+    and meaning to our lives. Whether it's a birthday, a family trip, or simply laughing with friends, 
+    special moments remind us of what truly matters.
 </body>
 </html>
