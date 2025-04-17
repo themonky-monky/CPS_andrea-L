@@ -1,7 +1,7 @@
 #andrea lugo, fist program python 
 
-greeting = "hello and welcome to my program"
+input = "hello and welcome to my program"
 
-print (greeting)
+print ("greeting")
 
-print ("hello" , greeting)
+print ("hello" , greeting")
