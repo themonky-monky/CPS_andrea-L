@@ -8,14 +8,7 @@ char name[50];
     printf("pleaser tell your name: ");
     scanf("%s", name); 
 
-    printf("<<< %s >>>\n", name);
-    printf("((( %s )))\n", name);
-    printf("--- %s ---\n", name);
-    printf(":) :) %s :) :)\n", name);
-    printf("### %s ###\n", name);
-    printf("+++ %s +++\n", name);
-    printf("~~~ %s ~~~\n", name);
-    printf("=== %s ===\n", name);
+    char one[] = "<<<"; 
 
 return 0; 
 }

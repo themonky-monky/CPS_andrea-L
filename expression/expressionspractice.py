@@ -1,21 +1,21 @@
 # andrea lugo, expression practice phyton 
 
-int(7-24/8*4+6)
-int(18/3-7+2*5)
-int(6*4/12+72/8-9)
-int(17-6/2)+4*3
-int -2(1*4-2/2)+(6+2-3)
-int-1*(3-4*7)/5 -2*24/6
-int(3*5^2/15)-(5-2^2)
-int(1^4*2^2+3^3)-2^5/4
-int(22/2-2.5)^2=(4-6/6)^2
+equation1 = int(7-24/8*4+6)
+equation2 = int(18/3-7+2*5)
+equation3 = int(6*4/12+72/8-9)
+equation4 = int((17-6/2)+4*3)
+equation5 = int(-2*(1*4-2/2)+(6+2-3))
+equation6 = int(-1*(3-4*7)/5 -2*24/6)
+equation7 = int((3*5**2/15)-(5-2**2))
+equation8 = int((1**4 * 2**2 + 3**3) - (2**5 / 4))
+equation9 = int((22 / 2 - 2*5) ** 2 + (4 - 6 / 6) ** 2)
 
-print("%d\n,equation")
-print("%d\n,equation2")
-print("%d\n,equation3")
-print("%d\n,equation4")
-print("%d\n,equation5")
-print("%d\n,equation6")
-print("%d\n,equation7")
-print("%d\n,equation8")
-print("%d\n,equation9") 
+print(f"{equation1}\nEquation 1")  
+print(f"{equation2}\nEquation 2")  
+print(f"{equation3}\nEquation 3")  
+print(f"{equation4}\nEquation 4")  
+print(f"{equation5}\nEquation 5")  
+print(f"{equation6}\nEquation 6")  
+print(f"{equation7}\nEquation 7")  
+print(f"{equation8}\nEquation 8")  
+print(f"{equation9}\nEquation 9")   
