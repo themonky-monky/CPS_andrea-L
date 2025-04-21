@@ -1,0 +1,52 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Change the font */
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Layout with Flexbox for the container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Padding and margin around text */
+.content {
+    padding: 15px;
+    margin: 10px;
+    background-color: blue;
+    width: 45%;
+}
+
+.image-section {
+    padding: 15px;
+    margin: 10px;
+    background-color: pink;
+    width: 45%;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+}
+
+/* Use CSS Grid for Layout */
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
