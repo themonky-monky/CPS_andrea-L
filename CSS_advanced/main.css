@@ -33,3 +33,8 @@ img{
 3. monospace
 4. cursive
 5. fantasy */
+#no{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
