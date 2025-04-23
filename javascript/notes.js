@@ -1,7 +1,9 @@
 let images = ["https://static01.nyt.com/images/2024/11/26/multimedia/moana2-1-zlqt/moana2-1-zlqt-mediumSquareAt3X.jpg"
     ]
 function hello(){
+    let name = window.prompt("What is your name?", "Koro sensei")
     document.getElementById("title").innerHTML = "Hello World!"
+    + name + "!"
 }
 
 count = 0
@@ -19,6 +21,16 @@ function highlight(){
     document.getElementById("title").style.color = "black"
 }
 
+function normal(){
+    document.getElementById("btn").style.backgroundColor = "gray"
+    document.getElementById("title").style.color = "black"
+}
+
+function push(){
+    document.getElementById("btn").style.backgroundColor = "green"
+    document.getElementById("title").style.color = "black"
+}
+
 function
 unhighlight(){
     document.getElementById("btn").style.backgroundColor = "white"
@@ -33,4 +45,8 @@ changeColor(){
 
 function show(){
     document.getElementById("hidden").style.display = "block"
+}
+
+function pop(){
+    window.alert("for real. Don't click this!")
 }
