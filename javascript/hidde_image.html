@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hidden image</title>
+    <style>
+        #secret {
+            display: none;
+            margin-top: 10px;
+        }
+        .hover-zone:hover + #secret {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>All About Space Exploration</h1>
+
+    <p>Space exploration is the discovery and exploration of celestial structures in outer space by means of evolving 
+        and growing space technology. It has allowed us to learn more about our universe, our solar system, and even 
+        the possibility of life on other planets From satellites and telescopes to crewed missions and robotic probes, 
+        space exploration has helped us learn more about our solar system and the universeToday, space exploration is 
+        a global effort involving many countries and private companies. The International Space Station (ISS) is a 
+        prime example of international cooperation in space. It serves as a laboratory for scientific research and a 
+        base for future missions to the Moon and Mars. .</p>
+
+    <p>Major organizations like NASA, ESA, and SpaceX have launched countless missions into space to study everything 
+        from the Moon to distant galaxies. Technologies developed for space exploration have also benefited life here 
+        on Earth, including advancements in communication, weather forecasting, and materials science.The future of 
+        space exploration is full of exciting possibilities. NASA and other space agencies are working on returning 
+        humans to the Moon and eventually sending astronauts to Mars. Private companies like SpaceX and Blue Origin 
+        are also playing a major role in developing new technologies for space travel. With each mission, we get one 
+        step closer to understanding more about our universe and our place within it.</p>
+
+    <img src="https://media.timeout.com/images/105653190/image.jpg" alt="Rocket Launch" width="400">
+
+    <h2>Famous Space Missions</h2>
+    <ul>
+        <li>Apollo 11</li>
+        <li>Voyager 1</li>
+        <li>International Space Station (ISS)</li>
+        <li>Mars Rover Missions</li>
+    </ul>
+
+    <p class="hover-zone" style="color: blue; cursor: pointer;">(Hover here for a surprise 🚀)</p>
+    <img id="secret" src="https://planetary.s3.amazonaws.com/assets/images/mer_updates/2017-01/20170204_11Roverextraordinair-MERbasicpromoimage.jpg" alt="Hidden Mars Rover" width="300">
+
+</body>
+</html>
