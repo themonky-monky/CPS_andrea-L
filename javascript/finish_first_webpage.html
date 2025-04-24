@@ -1,40 +1,99 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>finish first webpage</title>
-        <style>
-            img{
-                height: 150;
-            }
-            #hidden{
-                display: none;
-            }
-            #extra{
-                display: none;
-            }
-        </style>
-    </head>
-    <body>
-       <h1 Id="title"the mountain></h1>
-       <p Id="dont" onclick="pop()">don't click me!</p>
-         <button id="btn" onmouseover="highlight()" onmouseout="normal()" onmouseout="push()" onmouseover="highlight()">Click Me!</button>
-         <h1 id="title"></h1>
-            <button id="btn" onmouseover="highlight" onmouseout="normal()" onclick="hello()">Click Me!</button>
-            <br>
-            <img Id="img" onmouseover="change ()" src="https://www.earth.com/assets/_next/image/?url=https%3A%2F%2Fcff2.earth.com%2Fuploads%2F2023%2F06%2F02100547%2FMountain-2-1400x850.jpg&w=1200&q=75"alt="mountain">
-            <img Id="hidden" src="https://ultimatekilimanjaro.com/wp-content/uploads/2023/10/matterhorn.jpeg" alt="mountain">
-        <p>In more part of the world have mountain because is things that can help to the country in 
-            the different station that have in all year and when has more water can have for and to have 
-            river more cold because the water is of the swnok and in different place have mountain but no 
-            have the different station and is for that in more place no have thigs that can help to have 
-            different station </p>
-            <button id="shw" onclick="more()">show more </button>
-            <ul>
-                <li>mountain</li>
-                <li>beautiful</li>
-                <li>river</li>
-                <li>water</li>
-            </ul>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Mountains of the World</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f8ff;
+    }
+
+    img {
+      height: 150px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    #extra {
+      display: none;
+      margin-top: 15px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      background-color: #4682b4;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #5a9bd4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mountains of the World</h1>
+  <p>
+    Mountains are large landforms that rise high above the surrounding land. They are formed by movements 
+            of the Earth's crust and are often found in ranges. Mountains are important because they affect weather, 
+            provide homes for wildlife, and supply fresh water from melted snow. People visit mountains for hiking, 
+            skiing, and to enjoy the beautiful views. </p>
+
+  <img id="hoverImg" 
+       src="https://www.earth.com/assets/_next/image/?url=https%3A%2F%2Fcff2.earth.com%2Fuploads%2F2023%2F06%2F02100547%2FMountain-2-1400x850.jpg&w=1200&q=75" 
+       alt="Mountain" 
+       onmouseover="changeImage()" 
+       onmouseout="resetImage()">
+
+  <div id="extra">
+    <p>
+      Mountains are not just beautiful—they are essential to the environment. They provide clean water, 
+      cool temperatures, and support unique wildlife.
+    </p>
+    <img src="https://ultimatekilimanjaro.com/wp-content/uploads/2023/10/matterhorn.jpeg" alt="Another Mountain">
+  </div>
+
+  <button onclick="toggleExtra()">Show More</button>
+
+  <ul>
+    <li>Mountains</li>
+    <li>Beautiful views</li>
+    <li>Rivers and lakes</li>
+    <li>Fresh air</li>
+  </ul>
+
+  <script>
+    function changeImage() {
+      document.getElementById("hoverImg").src = "https://ultimatekilimanjaro.com/wp-content/uploads/2023/10/matterhorn.jpeg";
+    }
+
+    function resetImage() {
+      document.getElementById("hoverImg").src = "https://www.earth.com/assets/_next/image/?url=https%3A%2F%2Fcff2.earth.com%2Fuploads%2F2023%2F06%2F02100547%2FMountain-2-1400x850.jpg&w=1200&q=75";
+    }
+
+    function toggleExtra() {
+      const extra = document.getElementById("extra");
+      const btn = event.target;
+      if (extra.style.display === "none") {
+        extra.style.display = "block";
+        btn.textContent = "Show Less";
+      } else {
+        extra.style.display = "none";
+        btn.textContent = "Show More";
+      }
+    }
+  </script>
+
+</body>
 </html>
