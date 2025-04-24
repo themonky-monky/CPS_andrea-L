@@ -50,3 +50,13 @@ function show(){
 function pop(){
     window.alert("for real. Don't click this!")
 }
+
+function more(){
+    if(document.getElementById("extra").style.display != "flex"){
+    ducument.getElementById("extra").style.display = "flex"
+    document.getElementById("shw").innerHTML = "show less"
+ }else{
+        document.getElementById("extra").style.display = "none"
+        document.getElementById("shw").innerHTML = "show more"
+    }
+}
