@@ -9,9 +9,33 @@ body{
     text-align: center;
     padding: 10px;
  }
-
  .container{
-    display: flex;
-    justify-content: space-around;
-
+    display:flex;
+    justify-content:space-around;
+    padding:15px;
  }
+
+   .content{
+      padding:15px;
+      margin:10px;
+      background-color:blue;
+      width:45%;
+   }
+   .image-section{
+      padding:15px;
+      margin:10px;
+      background-color:pink;
+      width:45%;
+   }
+   .image-section img{
+      width:100%;
+      height:auto;
+   }
+   footer{
+      margin-top:20px;
+   }
+   .container-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+   }
