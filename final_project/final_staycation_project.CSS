@@ -7,7 +7,7 @@ body{
     background-color: yellowgreen;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
  }
  .container{
     display:flex;
@@ -23,12 +23,12 @@ body{
    }
    .image-section{
       padding:15px;
-      margin:10px;
+      margin:20px;
       background-color:pink;
       width:45%;
    }
    .image-section img{
-      width:100%;
+      width:50%;
       height:auto;
    }
    footer{
