@@ -3,13 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Natural Bridges National Monument - Utah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
      <style>
-        /* CSS para reducir las imágenes */
+        /* CSS */
         #gallery img {
-            width: 200px; /* Establece el ancho de las imágenes a 200px */
-            height: auto; /* Mantiene la proporción de la imagen */
-            margin: 10px; /* Añade espacio entre las imágenes */
-            border-radius: 8px; /* Opcional: bordes redondeados */
+            width: 200px; 
+            height: auto; 
+            margin: 10px; 
+            border-radius: 8px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: palevioletred;
+        }
+
+        header {
+            background-color: rgb(223, 113, 168);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 30px, 20px;
+        }
+
+        .content{
+            background-color: black;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: rgb(153, 0, 255);
+            max-width: 400px;
+            width: 100%;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        h2{
+            color: black;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        ul {
+            list-style: none;
+            display: center;
+            gap: 20px;
         }
     </style>
 </head>
@@ -19,7 +75,7 @@
     </header>
 
     <main>
-        <section id="description">
+        <section class="crossorigin" id="description">
              <p>Natural Bridges National Monument is not only a destination for outdoor enthusiasts, but it also 
                  offers a glimpse into the rich history of the area. The park is home to ancient petroglyphs created 
                  by the Ancestral Puebloans, offering a cultural connection to the past. Visitors can learn about these 
@@ -33,10 +89,10 @@
         <section id="reasons">
             <h2>Top 4 Reasons to Visit Natural Bridges National Monument</h2>
             <ul>
-                <li>Explore the three stunning natural bridges: Sipapu, Kachina, and Owachomo.</li>
-                <li>Hike scenic trails through ancient landscapes and canyons.</li>
-                <li>Experience star-gazing in one of the darkest skies in the country.</li>
-                <li>Enjoy a peaceful, less crowded park perfect for solitude and reflection.</li>
+                <li>1.Explore the three stunning natural bridges: Sipapu, Kachina, and Owachomo.</li>
+                <li>2.Hike scenic trails through ancient landscapes and canyons.</li>
+                <li>3.Experience star-gazing in one of the darkest skies in the country.</li>
+                <li>4.Enjoy a peaceful, less crowded park perfect for solitude and reflection.</li>
             </ul>
         </section>
 
@@ -49,9 +105,10 @@
             </div>
         </section>
 
-        <section "more information of the park">
-            <button onclick="toggleContent()">Click to Learn More</button>
-                <p>Natural Bridges National Monument is a place to escape the crowds and immerse yourself in 
+            <section more="information of the park">
+            <button onclick ="toggleContent()"> Click to see more </button>
+            <h2>More of the park</h2>
+                    <p>Natural Bridges National Monument is a place to escape the crowds and immerse yourself in 
                     the beauty of nature. Visitors can take the scenic drive and stop at various viewpoints or 
                     embark on longer hikes to fully experience the rock formations and surrounding landscapes. 
                     The park is also home to many prehistoric petroglyphs left by ancient Native American cultures.</p>
@@ -61,7 +118,6 @@
     </main>
 
     <footer>
-        <p>Natural Bridges National Monument</p>
         <script>
         // JavaScript to toggle the visibility of additional content
         function toggleContent() {
