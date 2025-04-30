@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Natural Bridges National Monument - Utah</title>
+     <style>
+        /* CSS para reducir las imágenes */
+        #gallery img {
+            width: 200px; /* Establece el ancho de las imágenes a 200px */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin: 10px; /* Añade espacio entre las imágenes */
+            border-radius: 8px; /* Opcional: bordes redondeados */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -53,6 +62,17 @@
 
     <footer>
         <p>Natural Bridges National Monument</p>
+        <script>
+        // JavaScript to toggle the visibility of additional content
+        function toggleContent() {
+            const content = document.getElementById('extra-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
     </footer>
 
     <script src="script.js"></script>
