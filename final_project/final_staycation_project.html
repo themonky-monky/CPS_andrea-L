@@ -1,87 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-       <title>Final staycation project</title>
-       <style>
-        body{
-            background-color: pink;
-            font-family: arial;
-            margin: 0;
-            padding: 0;
-        }
-        header{
-            background-color: gray;
-            color: white;
-            margin: 20px;
-            text-align: center;
-        }
-        main{
-            display:flex;
-            flex-direction: column;
-            padding: 20px;
-            gap:20px;
-        }
-        section{
-            background-color: rosybrown;
-            padding:20px;
-            border-radius:40px;
-            box-shadow: rgb(0, 255, 179); 
-            max-width:800px;
-            width: 100%;
-        }
-        h2{
-            color: yellowgreen;
-        }
-        p{
-            font-size: 15px;
-            line-height:1.2;
-            text-align:justify;
-        }
-        footer{
-            background-color:aqua;
-            color:rgb(255, 255, 255);
-            text-align: center;
-            padding:15px;
-            margin-top: 15px;
-        }
-       </style>
-       </head>
-       <body>
-        <header>
-            <h1>Natural bridges national monument</h1>
-        </header>
-        <main>
-            <section>
-                <img src="https://sjkphoto.wordpress.com/wp-content/uploads/2015/12/2015_ut-11717-pano.jpg"></img>
-                <img src="https://www.nps.gov/common/uploads/grid_builder/nabr/crop16_9/67E78190-1DD8-B71B-0B4AC69FBD1ADAFE.jpg?width=640&quality=90&mode=crop"></img>
-                <h2>beautiful mountain</h2>
-                <p>Natural Bridges National Monument is a national monument located in southeastern Utah, USA. 
-                It was established to protect three natural rock bridges: Sipapu Bridge, Kachina Bridge, and Owachomo Bridge. 
-                The monument is known for its stunning geological formations, hiking trails, and rich cultural history. 
-                Visitors can explore the area through various trails, including the loop trail that takes you to all three bridges
-                the visitor is open year, can visit the monument with minimun inpact to the fragile desert the visitors center 
-                is provide by solar energy the photovotaic power system dedicated in 1980 was the world's largest solar system at 
-                the time.</p>
-                
-                <section>
-                <h2>Activities</h2>
-                <ul>
-                    <li>Explore the various trails</li>
-                    <li>Explore the area</li>
-                    <il>see the monument</il>
-                    <li>photovotaic power system</li>
-                </ul>
-                </section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Natural Bridges National Monument - Utah</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Natural Bridges National Monument!</h1>
+    </header>
 
-                <section>
-                    <h2>reason for you need go</h2>
-                    <ul>
-                        <li>Natural Bridges National Monument is a unique and beautiful destination that offers stunning views of natural rock formations.</li>
-                        <li>The park is home to three impressive natural bridges, each with its own unique features and hiking trails.</li>
-                        <li>The area is rich in cultural history, with evidence of ancient Native American habitation and rock art.</li>
-                        <li>The park is less crowded than other national parks, making it a great place to escape the hustle and bustle of everyday life.</li>
-                    </ul>
-                </section>
-</body> 
+    <main>
+        <section id="description">
+             <p>Natural Bridges National Monument is not only a destination for outdoor enthusiasts, but it also 
+                 offers a glimpse into the rich history of the area. The park is home to ancient petroglyphs created 
+                 by the Ancestral Puebloans, offering a cultural connection to the past. Visitors can learn about these 
+                 historical artifacts while exploring the park's trails, making it an enriching experience for history 
+                 buffs as well as nature lovers. Whether you're photographing the dramatic arches, hiking through canyons, 
+                 or simply enjoying the tranquil atmosphere, there's always something new to discover at Natural Bridges 
+                 National Monument.</p>
+</section>
+        </section>
+
+        <section id="reasons">
+            <h2>Top 4 Reasons to Visit Natural Bridges National Monument</h2>
+            <ul>
+                <li>Explore the three stunning natural bridges: Sipapu, Kachina, and Owachomo.</li>
+                <li>Hike scenic trails through ancient landscapes and canyons.</li>
+                <li>Experience star-gazing in one of the darkest skies in the country.</li>
+                <li>Enjoy a peaceful, less crowded park perfect for solitude and reflection.</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="image-container">
+                <img src="https://www.nps.gov/nabr/learn/historyculture/images/nabr-histcult-top-horsecollar.jpg?maxwidth=1300&maxheight=1300&autorotate=false">
+                <img src="https://www.earthdiver.com/cdn-cgi/image/width=4000,quality=75,format=auto/https://assets.earthdiver.com/media/media-4424.jpg">
+                <img src="https://images.ctfassets.net/0wjmk6wgfops/2J6RTar89vO8BLAlCV0fIc/0212bffb3a3f7a5da1e563741893cef5/AdobeStock_227861456_ac92f5c7-466f-446e-831a-f83e603751f9.jpg?q=70">
+            </div>
+        </section>
+
+        <section "more information of the park">
+            <button onclick="toggleContent()">Click to Learn More</button>
+                <p>Natural Bridges National Monument is a place to escape the crowds and immerse yourself in 
+                    the beauty of nature. Visitors can take the scenic drive and stop at various viewpoints or 
+                    embark on longer hikes to fully experience the rock formations and surrounding landscapes. 
+                    The park is also home to many prehistoric petroglyphs left by ancient Native American cultures.</p>
+                <img src="https://bluffutah.org/wp-content/uploads/2020/01/Natural-Bridges-Monument-Sign.jpg">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Natural Bridges National Monument</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
