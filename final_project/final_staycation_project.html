@@ -22,12 +22,27 @@
         }
 
         header {
-            background-color: rgb(223, 113, 168);
-            color: white;
+            background-color: palevioletred;
+            color: rgb(5, 0, 12);
             padding: 20px;
             text-align: center;
         }
 
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        section {
+            background-color:rgb(216, 140, 212);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: rgb(202, 139, 176);
+            max-width: 800px;
+        }
         .container {
             display: flex;
             flex-direction: column;
@@ -95,13 +110,16 @@
 
     <main class="container">
         <section id="description">
+            <h2>About Natural Bridges National Monument</h2>
             <p>Natural Bridges National Monument is not only a destination for outdoor enthusiasts, but it also 
                offers a glimpse into the rich history of the area. The park is home to ancient petroglyphs created 
                by the Ancestral Puebloans, offering a cultural connection to the past. Visitors can learn about these 
                historical artifacts while exploring the park's trails, making it an enriching experience for history 
                buffs as well as nature lovers. Whether you're photographing the dramatic arches, hiking through canyons, 
                or simply enjoying the tranquil atmosphere, there's always something new to discover at Natural Bridges 
-               National Monument.</p>
+               National Monument. The visitor center is open year-round. It has a slide program, publications, postcards, 
+               film and exhibits. Visitors are encouraged to stop by and learn how to visit the monument with minimum 
+               impact to the fragile desert environment and the archeological</p>
         </section>
 
         <section id="reasons">
@@ -126,13 +144,21 @@
         <button onclick="toggleContent()">Click to see more</button>
 
         <section id="extra-content" style="display: none;">
-            <h2>More of the park</h2>
+            <h2>More of natural bridges national monument</h2>
             <p>Natural Bridges National Monument is a place to escape the crowds and immerse yourself in 
             the beauty of nature. Visitors can take the scenic drive and stop at various viewpoints or 
             embark on longer hikes to fully experience the rock formations and surrounding landscapes. 
-            The park is also home to many prehistoric petroglyphs left by ancient Native American cultures.</p>
+            The park is also home to many prehistoric petroglyphs left by ancient Native American cultures. 
+            Trails lead down to each bridge and to key archaeological sites, or they may be viewed by walking 
+            short distances to overlooks</p>
+        <section id="gallery">
+        <div class="image-container">
             <img src="https://bluffutah.org/wp-content/uploads/2020/01/Natural-Bridges-Monument-Sign.jpg" alt="Park Entrance Sign">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/75/6a/e4/natural-bridge-at-sunrise.jpg?w=1200&h=-1&s=1" alt="park entrance sign"> 
+        </div>
         </section>
+        </section>
+    
     </main>
 
     <footer>
