@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <title>Natural Bridges National Monument - Utah</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-     <style>
-        /* CSS */
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
         #gallery img {
-            width: 200px; 
-            height: auto; 
-            margin: 10px; 
+            width: 200px;
+            height: auto;
+            margin: 10px;
             border-radius: 8px;
         }
 
@@ -34,14 +33,14 @@
             flex-direction: column;
             align-items: center;
             gap: 30px;
-            padding: 30px, 20px;
+            padding: 30px 20px;
         }
 
-        .content{
+        .content {
             background-color: black;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: rgb(153, 0, 255);
+            box-shadow: 0 4px 8px rgba(153, 0, 255, 0.5);
             max-width: 400px;
             width: 100%;
             margin: 20px;
@@ -50,22 +49,42 @@
         h1 {
             font-size: 35px;
             margin-bottom: 15px;
+            font-family: 'Great Vibes', cursive;
         }
 
-        h2{
+        h2 {
             color: black;
+            font-family: 'Playfair Display', serif;
         }
 
         p {
             font-size: 18px;
             line-height: 1.6;
             text-align: justify;
+            font-family: 'Playfair Display', serif;
         }
 
         ul {
             list-style: none;
-            display: center;
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
@@ -74,52 +93,53 @@
         <h1>Welcome to Natural Bridges National Monument!</h1>
     </header>
 
-    <main>
-        <section class="crossorigin" id="description">
-             <p>Natural Bridges National Monument is not only a destination for outdoor enthusiasts, but it also 
-                 offers a glimpse into the rich history of the area. The park is home to ancient petroglyphs created 
-                 by the Ancestral Puebloans, offering a cultural connection to the past. Visitors can learn about these 
-                 historical artifacts while exploring the park's trails, making it an enriching experience for history 
-                 buffs as well as nature lovers. Whether you're photographing the dramatic arches, hiking through canyons, 
-                 or simply enjoying the tranquil atmosphere, there's always something new to discover at Natural Bridges 
-                 National Monument.</p>
-</section>
+    <main class="container">
+        <section id="description">
+            <p>Natural Bridges National Monument is not only a destination for outdoor enthusiasts, but it also 
+               offers a glimpse into the rich history of the area. The park is home to ancient petroglyphs created 
+               by the Ancestral Puebloans, offering a cultural connection to the past. Visitors can learn about these 
+               historical artifacts while exploring the park's trails, making it an enriching experience for history 
+               buffs as well as nature lovers. Whether you're photographing the dramatic arches, hiking through canyons, 
+               or simply enjoying the tranquil atmosphere, there's always something new to discover at Natural Bridges 
+               National Monument.</p>
         </section>
 
         <section id="reasons">
             <h2>Top 4 Reasons to Visit Natural Bridges National Monument</h2>
             <ul>
-                <li>1.Explore the three stunning natural bridges: Sipapu, Kachina, and Owachomo.</li>
-                <li>2.Hike scenic trails through ancient landscapes and canyons.</li>
-                <li>3.Experience star-gazing in one of the darkest skies in the country.</li>
-                <li>4.Enjoy a peaceful, less crowded park perfect for solitude and reflection.</li>
+                <li>1. Explore the three stunning natural bridges: Sipapu, Kachina, and Owachomo.</li>
+                <li>2. Hike scenic trails through ancient landscapes and canyons.</li>
+                <li>3. Experience star-gazing in one of the darkest skies in the country.</li>
+                <li>4. Enjoy a peaceful, less crowded park perfect for solitude and reflection.</li>
             </ul>
         </section>
 
         <section id="gallery">
             <h2>Gallery</h2>
             <div class="image-container">
-                <img src="https://www.nps.gov/nabr/learn/historyculture/images/nabr-histcult-top-horsecollar.jpg?maxwidth=1300&maxheight=1300&autorotate=false">
-                <img src="https://www.earthdiver.com/cdn-cgi/image/width=4000,quality=75,format=auto/https://assets.earthdiver.com/media/media-4424.jpg">
-                <img src="https://images.ctfassets.net/0wjmk6wgfops/2J6RTar89vO8BLAlCV0fIc/0212bffb3a3f7a5da1e563741893cef5/AdobeStock_227861456_ac92f5c7-466f-446e-831a-f83e603751f9.jpg?q=70">
+                <img src="https://www.nps.gov/nabr/learn/historyculture/images/nabr-histcult-top-horsecollar.jpg?maxwidth=1300&maxheight=1300&autorotate=false" alt="Horse Collar Ruin">
+                <img src="https://www.earthdiver.com/cdn-cgi/image/width=4000,quality=75,format=auto/https://assets.earthdiver.com/media/media-4424.jpg" alt="Natural Bridge View">
+                <img src="https://images.ctfassets.net/0wjmk6wgfops/2J6RTar89vO8BLAlCV0fIc/0212bffb3a3f7a5da1e563741893cef5/AdobeStock_227861456_ac92f5c7-466f-446e-831a-f83e603751f9.jpg?q=70" alt="Natural Rock Formation">
             </div>
         </section>
 
-            <section more="information of the park">
-            <button onclick ="toggleContent()"> Click to see more </button>
+        <button onclick="toggleContent()">Click to see more</button>
+
+        <section id="extra-content" style="display: none;">
             <h2>More of the park</h2>
-                    <p>Natural Bridges National Monument is a place to escape the crowds and immerse yourself in 
-                    the beauty of nature. Visitors can take the scenic drive and stop at various viewpoints or 
-                    embark on longer hikes to fully experience the rock formations and surrounding landscapes. 
-                    The park is also home to many prehistoric petroglyphs left by ancient Native American cultures.</p>
-                <img src="https://bluffutah.org/wp-content/uploads/2020/01/Natural-Bridges-Monument-Sign.jpg">
-            </div>
+            <p>Natural Bridges National Monument is a place to escape the crowds and immerse yourself in 
+            the beauty of nature. Visitors can take the scenic drive and stop at various viewpoints or 
+            embark on longer hikes to fully experience the rock formations and surrounding landscapes. 
+            The park is also home to many prehistoric petroglyphs left by ancient Native American cultures.</p>
+            <img src="https://bluffutah.org/wp-content/uploads/2020/01/Natural-Bridges-Monument-Sign.jpg" alt="Park Entrance Sign">
         </section>
     </main>
 
     <footer>
-        <script>
-        // JavaScript to toggle the visibility of additional content
+        <p style="text-align:center; color:white; padding: 10px;"></p>
+    </footer>
+
+    <script>
         function toggleContent() {
             const content = document.getElementById('extra-content');
             if (content.style.display === 'none') {
@@ -129,8 +149,5 @@
             }
         }
     </script>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
